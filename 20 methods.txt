@@ -1,0 +1,113 @@
+
+
+#Check for at least 20 methods in list, tuple and dictionary and write a python code as example for each
+
+# LIST
+
+# append is used to add an element to the end of a list
+# example: 
+
+my_list = [5, 8, 12]
+my_list.append (10)
+print(my_list)  
+
+
+# extend is used to add all the elements of a list to another list
+#example:
+
+my_list = [5, 8, 12]
+my_list2 = [4, 5, 6]
+my_list.extend(my_list2)
+print(my_list)  
+
+
+# insert is used to insert an element in a specific position
+#example
+
+my_list = [5, 7, 3]
+my_list.insert(6, 2)
+print(my_list)
+
+
+# remove is used to remove the first occurence of an element in a list
+# example: 
+my_list = [5, 7, 2, 3, 2]
+my_list.remove(2)
+print(my_list)
+
+
+# pop is used to remove and return the element at a specified position
+#example:
+my_list = [5, 7, 2, 3, 2]
+my_list.pop(4)
+print(my_list)
+
+
+#TUPLE
+
+#Count is used the number of occurence of a specified value in a tuple
+# example
+my_tuple = (5, 7, 2, 3, 2, 3, 7, 3, 5, 3)
+print(my_tuple.count(3))
+print(my_tuple.count(7))
+print(my_tuple.count(5))
+
+# index is used to search for a value and returns the particular value to the position where it was found
+# example
+
+my_tuple = (5, 7, 2, 3, 2, 3, 7, 3, 5, 3)
+print(my_tuple.index(2))
+print(my_tuple.index(5))
+print(my_tuple.index(3))
+
+
+# Dictionary
+
+# clear is used to remove all elements from the dictionary
+#example
+
+my_dict = {"place": "Agege", "number": 58}
+my_dict.clear()
+print(my_dict)  
+
+
+#copy returns the copy of the dictionary
+#example
+
+my_dict = {"place": "Agege", "number": 58}
+my_dict2 = my_dict.copy()
+print(my_dict2)
+
+
+#get returns the value of a specified key if it exists, and if it does not exist, it returns the default value of the specified
+
+#example
+
+my_dict = {"place": "Agege", "number": 58}
+print(my_dict.get("place")) 
+print(my_dict.get("number"))
+print(my_dict.get("address", "Unknown"))
+
+
+
+# items returns a list that consist of a tuple for each key-value pair in the dictionary
+#example
+
+my_dict = {"place": "Agege", "number": 58}
+print(my_dict.items())
+
+
+#key returns the list that contains the list of the dictionary
+
+#example
+
+my_dict = {"place": "Agege", "number": 58}
+print(my_dict.keys())
+
+
+# values retun the list that contains the values of the dictionary
+
+#example
+
+my_dict = {"place": "Agege", "number": 58}
+print(my_dict.values())  
